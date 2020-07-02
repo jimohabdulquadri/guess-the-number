@@ -76,10 +76,9 @@ const initGame = () => {
         let trials = 0 // Initial trials is zero 
         let startGame = () => {
             welcomeMessage("Welcome to guess the number written by Jimoh Abdul")
-            mp3Player.play()
             while (true) {
                 let computerGuess = randomNumbers(2) //The computer makes a guess 
-                let userPrediction = userGuess("Please , enter a number between 0 and 2") // The user makes a guess
+                let userPrediction = userGuess("Please, enter a number between 0 and 2") // The user makes a guess
                 trials++
                 if (computerGuess == userPrediction) { // Now compare the values 
                     successMessage("You made a correct guess", computerGuess)
